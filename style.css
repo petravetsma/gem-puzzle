@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.gem-field {
+  margin: 30px auto 0;
+  max-width: 400px;
+}
+
+.gem-heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.gem-text:nth-child(2) {
+  cursor: pointer;
+  user-select: none;
+}
+
+.gem-board {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  margin: 0 auto;
+  gap: 7px;
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  background-color: rgba(175, 25, 25, 0.7);
+  border-radius: 5%;
+}
+
+.gem-element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(243, 243, 243);
+  border-radius: 10%;
+  user-select: none;
+  cursor: pointer;
+}
+
+.empty {
+  opacity: 0;
+}
